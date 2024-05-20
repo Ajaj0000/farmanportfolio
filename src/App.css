@@ -1,38 +1,366 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.day{
+  background-color: black;
+  color: white!important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.night{
+  background-color: white;
+  color: black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.don1{
+  display: none;
+}
+.don2{
+  display: none;
+}
+.doff1{
+  position: fixed;
+  top: 43px;
+    left: 0px;
+    background-color: #c3c1c1;
+    color: black;
+    padding: 0px 6px;
+    font-size: 20px;
+    border: none;
+}
+.doff2{
+  position: fixed;
+  top: 43px;
+    left: 0px;
+    background-color: #c3c1c1;
+    color: black;
+    padding: 0px 6px;
+    font-size: 20px;
+    border: none;
+}
+.red{
+  color: red!important;
+}
+.home{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+    background: linear-gradient(264deg, black , red, transparent);
+    color: white;
+    padding: 75px 0;
+}
+.home .img{
+  width: 40%;
+  margin-left: 1rem;
+}
+.home .img img{
+  width: 100%;
+  border-radius: 15px;
+}
+.home .detail{
+  width: 70%;
+  margin: auto;
+  margin-left: 3rem;
+}
+.home .detail h1{
+  font-family: var(--home-font);
+  line-height: 1.24;
+}
+.home .detail button{
+  border: 2px solid black;
+    padding: 4px 11px 6px 11px;
+    font-size: 23px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: inherit;
+}
+.home .detail p{
+  width: 74%;
+}
+.home .detail button:hover{
+  background-color: red;
+  transition: all 0.7s ease-in-out;
+}
+.button{
+  margin-top: 3rem;
+  right: 30px;
+  position: fixed;
+}
+.button button{
+  border: none;
+    padding: 0px 11px 6px 11px;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.button .bu span{
+  visibility: hidden;
+  position: absolute;
+  opacity: -1;
+  margin-left: -50px;
+}
+.button .bu:hover span{
+  visibility: visible;
+  opacity: 1;
   color: white;
+  background-color: red;
+  padding: 0 2px;
+  border-radius: 4px;
+  transform: translate(-50px,15px);
+  transition: all 0.5s ease-in-out;
 }
-
-.App-link {
-  color: #61dafb;
+button.on2,.off1{
+  display: none;
 }
+/* ///// about */
+.about{
+  padding: 2rem 0;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.about .info{
+  display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: auto;
+}
+.about .info .tion{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.about .info .tion .box{
+  border: 1px solid rgb(41, 35, 35);
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    height: max-content;
+    text-align: center;
+}
+.about .info .tion .box h1{
+  font-weight: 800;
+  color: red;
+  font-family: math;
+}
+.about .info .tion .box p{
+  font-weight: 500;
+    color: #564343;
+    font-size: 17px;
+    overflow: hidden;
+}
+.about .info .personal button{
+  border: 1px solid red;
+    padding: 8px 11px 8px 11px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+}
+.about .info .personal h3{
+  font-size: 2rem;
+    color: #dc6969;
+}
+.about .skill .pro-circle{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 78%;
+    margin: auto;
+}
+.about .skill .pro-circle .circle{
+  width: 100%;
+    max-width: 149px;
+    display: grid;
+    height: 150px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 116px;
+}
+.about .line{
+  width: 41%;
+  margin: 5rem auto;
+  height: 1px;
+  background-color: #665757;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-width: 1px;
+}
+.about .experience .experienes{
+  display: flex;
+    justify-content: space-around;
+}
+.about .experience .experienes .edu .edus{
+  display: flex;
+}
+.about .experience .experienes .edu .first .hline{
+  width: 0.5px;
+    height: 70px;
+    border-width: 1px;
+    background-color: black;
+    margin-left: 0.7rem;
+}
+.about .experience .experienes .edu .edus .second{
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+.about .experience .experienes .edu .edus .first span{
+color: blue;
+    font-size: 1.5rem;
+}
+.about .experience .experienes .edu .edus .second p{
+font-weight: 400;
+    color: #110b0b;
+    background-color: gainsboro;
+    width: fit-content;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+/* /////contact */
+#contacts{
+  padding-top: 2rem;
+  padding-bottom: 5.9rem;
+}
+#contacts h1{
+  text-align: center;
+    padding: 2rem 0;
+    font-size: 3rem;
+    color: #7e0093;
+    font-weight: 700;
+}
+#contacts .contact{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+}
+#contacts .contact .firstc h1{
+  margin: 0;
+  padding: 0 0 1.5rem 0;
+    color: #6f6363;
+    font-size: 2rem;
+    text-align: unset;
+}
+#contacts .contact .firstc p{
+  width: 100%;
+    max-width: 348px;
+    color: #4c4c4c;
+}
+#contacts .contact .firstc .mail{
+  display: flex;
+}
+#contacts .contact .firstc .mail li svg{
+  font-size: 2.5rem;
+  color: #7e0093;
+}
+#contacts .contact .firstc .mail .id{
+  margin-left: 1rem;
+}
+#contacts .contact .firstc .mail .id h4{
+  font-size: 1rem;
+  margin: 0;
+}
+#contacts .contact .firstc .icon{
+  display: flex;
+  column-gap: 20px;
+}
+#contacts .contact .firstc .icon li{
+  background-color: gray;
+    padding: 6px 10px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+#contacts .contact .firstc .icon li:hover{
+  background-color: #7e0093;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+#contacts .contact .second input{
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin: 0 1rem 1rem 1rem;
+}
+#contacts .contact .second input.bin{
+  width: 690px;
+}
+#contacts .contact .second button{
+  padding: 3px 10px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1rem;
+    background-color: #7e0093;
+    border-radius: 100px;
+    color: white;
+}
+@media screen and (max-width: 450px){
+  body{
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+  .button{
+    position: unset;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  button.off1,.on2{
+    display: block;
+    border: none;
+    padding: 0px 8px 6px 8px;
+    font-size: 20px;
+    background-color: rgb(23, 188, 40);
+    color: white;
+    border-radius: 10px;
+  }
+  button.on1{
+    display: none;
+  }
+  button.off2{
+    border: none;
+    padding: 0px 8px 6px 8px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+  }
+  .close{
+    transform: translate(-400px, 10px);
+    transition: all 0.8s ease-in-out;
+    margin-top: -40px;
+  }
+  .open{
+    transition: all 0.2s ease-in-out;
+    margin-top: -40px;
+  }
+  .home .img{
+    width: 90%;
+  }
+  .home{
+    display: block;
+  }
+  .home .detail{
+    margin-top: 2rem;
+  }
+  .about .skill .pro-circle .circle{
+    margin-bottom: 20px;
+  }
+  #contacts .contact{
+    display: block;
+  }
+  #contacts .contact .firstc{
+    padding-bottom: 2rem;
+  }
+  #contacts .contact .second input.bin{
+    width: 100%;
+  }
+  .about .info{
+    display: block;
+  }
+  .about .experience .experienes{
+    display: block;
+  }
+  .about .experience .experienes .expe{
+    margin-bottom: 1rem;
   }
 }
