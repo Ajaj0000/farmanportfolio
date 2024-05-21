@@ -65,7 +65,7 @@ function HOme() {
                     </div>
                     <div className="detail">
                         <h1>I,m Farman Khan.<br /> Web  Developer</h1>
-                        <p>To Work With an Organization Where Can Learn New Skills And Increase My Abilities For The Organizational Goals as Well as Myself</p>
+                        <p>To work with an organization where can learn new skills and increase my abilities for the organizational goals as well as myself.</p>
                         <button onClick={Click2}>More About Me</button>
                     </div>
                 </div>

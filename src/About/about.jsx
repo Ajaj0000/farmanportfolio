@@ -152,7 +152,7 @@ function About() {
                             <ul>
                                 <li>
                                     <span>Age : </span>
-                                    <span>21</span>
+                                    <span>20</span>
                                 </li>
                             </ul>
                             <ul>
@@ -189,7 +189,7 @@ function About() {
                         </div>
                         <div className="tion">
                             <div className="box">
-                                <h1>2+</h1>
+                                <h1>3+</h1>
                                 <p>Completed Projects</p>
                             </div>
                             <div className="box">
@@ -203,7 +203,7 @@ function About() {
                         </div>
                     </div>
                     <div className="skill">
-                        <h1 style={{ textAlign: "center", color: "black", fontWeight: "700", margin: "2rem 0" }}> <span style={{ color: "red" }}>My</span> Skill</h1>
+                        <h1 style={{ textAlign: "center", color: "black", fontWeight: "700", margin: "2rem 0" }}> <span style={{ color: "red" }}>My</span> Skills</h1>
                         <div className="pro-circle">
                             {
                                 skill.map((datas) => {
