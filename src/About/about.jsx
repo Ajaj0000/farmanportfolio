@@ -67,11 +67,7 @@ function About() {
             name: "NODEJS",
             progress: 30
         },
-        {
-            id: 6,
-            name: "MONGODB",
-            progress: 50
-        }
+
     ]
     const getcolor = (progress) => {
         if (progress >= 80) {
@@ -108,7 +104,6 @@ function About() {
             detail: "Board - RBSE , Percentage - 69.50%"
         }
     ]
-
     return (
         <>
             <button onClick={dayy} className={`${(day === true) ? "don1" : "doff1"}`}><GiNightSleep /></button>
@@ -136,7 +131,7 @@ function About() {
                     <h1 style={{ textAlign: "center", color: "black", fontWeight: "700" }}>About <span style={{ color: "red" }}>Me</span></h1>
                     <div className="info">
                         <div className="personal">
-                            <h3>Personal Infos</h3>
+                            <h3>Personal Information</h3>
                             <ul>
                                 <li>
                                     <span>First Name : </span>

@@ -364,4 +364,10 @@ font-weight: 400;
   .about .experience .experienes .expe{
     margin-bottom: 1rem;
   }
+  .about .skill .pro-circle{
+  width: 86%;
+  }
+  .about .info .tion{
+    justify-content: center;
+  }
 }

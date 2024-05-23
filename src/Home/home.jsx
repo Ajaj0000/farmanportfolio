@@ -4,8 +4,8 @@ import { IoIosHome } from "react-icons/io";
 import { IoPerson } from "react-icons/io5";
 import { MdOutlineContactPage } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import { FaLockOpen } from "react-icons/fa";
-import { IoLockClosedSharp } from "react-icons/io5";
+import { FiAlignJustify } from "react-icons/fi";
+import { FiAlignLeft } from "react-icons/fi";
 import { WiDaySunny } from "react-icons/wi";
 import { GiNightSleep } from "react-icons/gi";
 
@@ -41,8 +41,8 @@ function HOme() {
             <button onClick={dayy} className={`${(day === true) ? "don1" : "doff1"}`}><GiNightSleep /></button>
             <button onClick={nightt} className={`${(day === false) ? "don2" : "doff2"}`}><WiDaySunny /></button>
             <div className={`${(day === true) ? "day" : "night"}`}>
-                <button onClick={first} className={`${(toggle === true) ? "on1" : "off1"}`}><FaLockOpen /></button>
-                <button onClick={second} className={`${(toggle === false) ? "on2" : "off2"}`}><IoLockClosedSharp /></button>
+                <button onClick={first} className={`${(toggle === true) ? "on1" : "off1"}`}><FiAlignJustify /></button>
+                <button onClick={second} className={`${(toggle === false) ? "on2" : "off2"}`}><FiAlignLeft /></button>
                 <div className={`${(toggle === true) ? "open" : "close"}`}>
                     <div className="button">
                         <div className="bu">
